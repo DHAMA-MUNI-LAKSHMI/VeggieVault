@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Foodie - Vegetarian Food</title>
+
+    <link rel="icon" type="images/png" href="./images/logo.jfif">
+    <!-- BOOTSTRAP CSS -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+
+
+<body class="bg-light">
+
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-warning shadow-sm">
+
+    <div class="container">
+
+
+        <!-- LOGO -->
+
+        <a
+            class="navbar-brand fw-bold fs-3 text-success"
+            href="#"
+            onclick="showHome()"
+        >
+
+            <img src="./images/logo1.jfif" class="rounded-circle" alt="logo" height="50px" width="50px">
+             VeggieVault
+
+        </a>
+
+
+        <!--  MOBILE TOGGLE -->
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#foodieNavbar"
+            aria-controls="foodieNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <!--  NAVIGATION  -->
+
+        <div
+            class="collapse navbar-collapse"
+            id="foodieNavbar"
+        >
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+
+                <!-- HOME -->
+
+                <li class="nav-item">
+
+                    <button
+                        class="nav-link btn"
+                        onclick="showHome()"
+                    >
+
+                        🏠 Home
+
+                    </button>
+
+                </li>
+
+
+                <!-- MY ORDERS -->
+
+                <li class="nav-item">
+
+                    <button
+                        class="nav-link btn"
+                        onclick="showOrders()"
+                    >
+
+                        📦 My Orders
+
+                    </button>
+
+                </li>
+
+
+                <!-- CART -->
+
+                <li class="nav-item">
+
+                    <button
+                        class="nav-link btn"
+                        onclick="showCart()"
+                    >
+
+                        🛒 Cart
+
+                        <span
+                            id="cartCount"
+                            class="badge bg-danger rounded-pill"
+                        >
+
+                            0
+
+                        </span>
+
+                    </button>
+
+                </li>
+
+
+                <!-- PROFILE -->
+
+                <li class="nav-item">
+
+                    <button
+                        class="nav-link btn"
+                        onclick="showProfile()"
+                    >
+
+                        <span id="profileName">
+
+                            👤 Profile
+
+                        </span>
+
+                    </button>
+
+                </li>
+
+
+                <!-- LOGOUT -->
+
+                <li class="nav-item">
+
+                    <button
+                        class="nav-link btn text-danger"
+                        onclick="logout()"
+                    >
+
+                        🚪 Logout
+
+                    </button>
+
+                </li>
+
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- MAIN CONTENT-->
+
+<main id="app" class="container py-4">
+
+    <!--
+        JavaScript will display:
+
+        Register
+        Login
+        Home
+        Food Details
+        Cart
+        Checkout
+        Orders
+        Profile
+    -->
+
+</main>
+
+
+
+<!-- FOOTER-->
+
+<footer class="bg-dark text-white mt-5">
+
+
+    <div class="container py-5">
+
+
+        <div class="row gy-4">
+
+
+            <!-- FOOTER ABOUT -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <h4 class="text-success fw-bold">
+
+                    <img src="./images/logo1.jfif" class="rounded-circle" alt="logo" height="50px" width="50px">
+                    VeggieVault
+                </h4>
+
+                <p class="text-light mb-0">
+
+                    Delicious vegetarian food
+                    delivered to your door.
+
+                </p>
+
+            </div>
+
+
+            <!-- FOOTER LINKS -->
+
+            <div class="col-6 col-md-3 col-lg-4">
+
+                <h5>
+
+                    Quick Links
+
+                </h5>
+
+                <ul class="list-unstyled">
+
+
+                    <li class="mb-2">
+
+                        <a
+                            href="#"
+                            class="text-white text-decoration-none"
+                            onclick="showHome()"
+                        >
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="mb-2">
+
+                        <a
+                            href="#"
+                            class="text-white text-decoration-none"
+                            onclick="showOrders()"
+                        >
+
+                            My Orders
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="mb-2">
+
+                        <a
+                            href="#"
+                            class="text-white text-decoration-none"
+                            onclick="showCart()"
+                        >
+
+                            Cart
+
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+
+            <!-- FOOTER INFORMATION -->
+
+            <div class="col-6 col-md-3 col-lg-4">
+
+                <h5>
+
+                    Information
+
+                </h5>
+
+                <ul class="list-unstyled">
+
+
+                    <li class="mb-2">
+
+                        About Us
+
+                    </li>
+
+
+                    <li class="mb-2">
+
+                        Contact
+
+                    </li>
+
+
+                    <li class="mb-2">
+
+                        Privacy
+
+                    </li>
+
+
+                    <li class="mb-2">
+
+                        Terms
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+        <hr class="border-secondary">
+
+
+        <!-- COPYRIGHT -->
+
+        <div class="text-center">
+
+
+            <p class="text-secondary mb-0">
+
+                © 2026 Foodie.
+                All rights reserved.
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+
+<!--  JAVASCRIPT-->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+></script>
+
+
+<!-- YOUR JAVASCRIPT -->
+
+<script src="index.js"></script>
+
+
+</body>
+
+</html>

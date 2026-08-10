@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffaf5;
+    color: #172554;
+    min-height: 100vh;
+    background: linear-gradient(to left,white,skyblue,pink);
+
+}
+
+
+   /* NAVBAR */
+
+.navbar-brand {
+    color: #198754 !important;
+    letter-spacing: 0.5px;
+}
+
+.navbar .nav-link {
+    color: #333;
+    transition: 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #198754;
+}
+
+
+/* Profile customer name */
+
+#profileName {
+    white-space: nowrap;
+}
+
+
+
+   /* MAIN APPLICATION */
+
+#app {
+    min-height: 650px;
+}
+
+
+   /* HERO SECTION */
+
+#app h1 {
+    letter-spacing: -0.5px;
+}
+
+
+/* FOOD CARDS */
+
+
+#card {
+    border-radius: 15px;
+    transition: 0.25s ease;
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#card:hover {
+    transform: translateY(-10px);
+}
+
+
+/* Food image */
+
+/* .card-img-top {
+    object-fit: cover;
+} */
+
+
+   /* FOOD DETAILS */
+
+.details-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+
+/* SEARCH */
+
+#searchInput {
+    border: 1px solid #ced4da;
+    transition: 0.2s ease;
+}
+
+#searchInput:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.15);
+}
+
+
+/* AUTH FORMS */
+
+#loginForm input,
+#registerForm input,
+#checkoutForm input,
+#checkoutForm select {
+    border-radius: 8px;
+}
+
+#loginForm input:focus,
+#registerForm input:focus,
+#checkoutForm input:focus,
+#checkoutForm select:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.15);
+}
+
+
+ /* BUTTONS  */
+
+.btn {
+    border-radius: 8px;
+}
+
+.btn-success {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.btn-success:hover {
+    background-color: #157347;
+    border-color: #146c43;
+}
+
+
+/*CART */
+
+#cartItems .card {
+    transition: 0.2s ease;
+}
+
+#cartItems .card:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Cart product images */
+
+/* #cartItems img {
+    object-fit: cover;
+} */
+
+/* ORDER PAGE */
+
+#ordersContainer .card {
+    border-radius: 15px;
+}
+
+
+/* PROFILE */
+
+#app .rounded-circle {
+    flex-shrink: 0;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: auto;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* LOADING */
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 575.98px) {
+
+    #app {
+        min-height: 550px;
+    }
+
+    #app h1 {
+        font-size: 28px;
+    }
+
+    #app h2 {
+        font-size: 24px;
+    }
+
+    #app h3 {
+        font-size: 21px;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    #cartItems .card-body {
+        padding: 12px;
+    }
+
+}
+
+/* TABLET */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    #app h1 {
+        font-size: 32px;
+    }
+
+}
+
+/* LAPTOP  */
+
+@media (min-width: 992px) {
+
+    #app {
+        min-height: 650px;
+    }
+
+}
